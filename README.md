@@ -39,6 +39,30 @@ https://github.com/user-attachments/assets/ff2409dc-da0a-422f-873f-e9c9ac40cf75
 
 ---
 
+## ⚙️ System Architecture
+
+This section illustrates the core components of the AeroPark Sentinel system.
+
+### 1. Autonomous Drone
+The eye in the sky. The drone is equipped with an ESP32-S3 camera module and is responsible for autonomously navigating the parking area to scan vehicles.
+
+<img width="700" height="500" alt="Drone pic" src="https://github.com/user-attachments/assets/ca3e96a5-1390-4ea7-ba25-4807e7fa0a43" />
+
+
+### 2. ESP32-S3 CAM
+The brain of the drone's vision system. This powerful microcontroller captures images of vehicle QR codes/barcodes and transmits them to the command center for processing.
+
+<img width="500" height="400" alt="esp32s3 sense cam" src="https://github.com/user-attachments/assets/4dcf93e5-6d6d-41f8-ac3a-0b273d079357" />
+
+
+### 3. AeroPark Sentinel Web Page
+The command center. This web application provides a real-time overview of the parking facility, drone status, and violation management.
+
+<img width="1000" height="600" alt="AeroPage" src="https://github.com/user-attachments/assets/cf853ee0-0d62-4492-8170-debd8875aa51" />
+
+
+---
+
 ## 📊 Feature Pages
 
 ### 1. Live Operations Dashboard (`/`)
