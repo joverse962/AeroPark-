@@ -1,36 +1,125 @@
-# Astro Starter Kit: Basics
+# 🚁 AeroPark Sentinel
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Command Center for Autonomous Drone Parking Monitoring
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**AeroPark Sentinel** is a professional, real-time drone monitoring system designed for automated parking lot enforcement and data collection. Built with modern web technologies, it provides a cyber-industrial command center aesthetic for managing autonomous drone operations.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
 ## Demo
 https://github.com/user-attachments/assets/ff2409dc-da0a-422f-873f-e9c9ac40cf75
 
+## 🛠 Technical Stack
+
+### Frontend Framework
+- **AstroJS** - File-based routing with server-side rendering for optimal performance
+- **React** - Interactive UI components via `@astrojs/react` integration
+- **TypeScript** - Type-safe development
+
+### Styling & Design
+- **Tailwind CSS v4** - Utility-first CSS framework with custom cyber-industrial theme
+- **Custom Theme**: Deep Slate (`#020617`) background with Electric Blue (`#3b82f6`) and Alert Red (`#ef4444`) accents
+- **Glassmorphism Effects** - Modern frosted-glass UI elements
+- **Custom Animations** - Pulse effects, glows, and transitions for active states
+
+### UI Components
+- **Lucide React** - Modern, technical line-based iconography for hardware and data visualization
+
+---
+
+## 🚀 The Core Concept
+
+### Hardware-Software Loop
+
+1. **Stationary Mode**: Drone remains docked, monitoring entrance via long-range sensor
+2. **Detection & Launch**: Autonomous launch triggered upon vehicle entry detection
+3. **The Scan**: Drone maneuvers above vehicle to scan QR/Bar code on roof or dashboard
+4. **Data Sync**: Scanned code cross-referenced with database to create "Vehicle Profile"
+5. **Enforcement**: Automatic flagging of violations (overstays, after-hours entries)
+
+---
+
+## 📊 Feature Pages
+
+### 1. Live Operations Dashboard (`/`)
+**Real-time drone control and monitoring**
+
+Features:
+- **FPV Live Feed** - High-definition video stream with AR overlay
+- **Telemetry HUD** - Real-time battery, altitude, GPS, temperature, and signal strength
+- **Manual Override Controls** - "Return to Base" and "Hover Mode" emergency commands
+- **Recent Scans** - Live feed of vehicle detections and validations
+- **Weather Conditions** - Current environmental data for flight safety
+- **System Alerts** - Real-time notifications and status updates
+
+### 2. Intelligence & Enforcement (`/intelligence`)
+**Automated violation tracking and vehicle profiling**
+
+Features:
+- **Active Violations** - Real-time overstay and after-hours alerts
+- **Overstay Detection** - Automatic flagging when vehicles exceed paid duration
+- **After-Hours Security** - Red-alert status for entries outside operating hours
+- **Profile History** - Searchable log of every vehicle entry
+- **Violation Analytics** - Breakdown of compliance rates and violation types
+- **Quick Actions** - Search profiles, generate citations, send notifications
+- **Most Frequent Vehicles** - Tracking of regular visitors
+
+### 3. Predictive Maintenance (`/maintenance`)
+**Hardware health monitoring and preventive scheduling**
+
+Features:
+- **Component Health Status** - Real-time monitoring of propellers, battery, motors, cameras
+- **Flight Minutes Tracking** - Alerts for component replacement timing
+- **Weather Grounding** - Weather API integration preventing unsafe flight conditions
+- **Maintenance Schedule** - Upcoming service reminders and firmware updates
+- **Parts Inventory** - Track spare parts and order supplies
+- **Maintenance History** - Complete log of all service activities
+- **Auto-Grounding Thresholds** - Configurable safety limits (wind, rain, visibility)
+
+### 4. Analytics (`/analytics`)
+**Data visualization and reporting** (existing page)
+
+---
+
+## 🎨 Visual Design System
+
+### Theme: Cyber-Industrial
+
+**Color Palette:**
+- **Base**: `#020617` (Deep Slate 950) - Primary background
+- **Accent Blue**: `#3b82f6` - Active states, primary actions
+- **Alert Red**: `#ef4444` - Violations, critical warnings
+- **Success Green**: `#22c563` - Valid operations, healthy status
+- **Warning Yellow**: `#eab308` - Cautions, scheduled maintenance
+
+### Typography:
+- **Font**: Inter (Google Fonts) - Modern, highly legible
+- **Monospace**: Used for vehicle IDs, telemetry data, technical readouts
+
+### UI Patterns:
+- **Glassmorphism**: Frosted glass cards with backdrop blur
+- **Card Hover Effects**: Subtle lift and glow on interaction
+- **Pulse Animations**: Active status indicators with breathing effect
+- **Glow Effects**: Color-coded glows (blue/red/green) for status emphasis
+
+## 📂 Project Structure
+
+The project is organized with a clear and modular file structure:
+
+```
+/
+├── public/                  # Static assets (images, fonts)
+├── src/
+│   ├── assets/              # Project-specific assets
+│   ├── components/          # Reusable React components (.tsx) and Astro components (.astro)
+│   ├── hooks/               # Custom React hooks
+│   ├── layouts/             # Main site layout
+│   ├── pages/               # Astro pages for routing
+│   └── styles/              # Global stylesheets
+├── astro.config.mjs         # Astro configuration
+├── package.json             # Project dependencies and scripts
+└── tailwind.config.mjs      # Tailwind CSS configuration
+```
 
 ## 🧞 Commands
 
